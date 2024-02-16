@@ -6,19 +6,24 @@ using UnityEngine;
 public class ScaleMovement : MonoBehaviour
 {
     [SerializeField] private Transform originalObject;
-    [SerializeField] private float scaleFactor;
+    [Range(0, 10)]
+    [SerializeField] private int scaleFactor = 2;
+
     [SerializeField] private Vector3 translation = new Vector3(0f,0f,0f);
+
+    public int ScaleFactor { get => scaleFactor; set => scaleFactor = value; }
+
     // Start is called before the first frame update
     void Start()
     {
-        transform.localPosition = originalObject.localPosition * scaleFactor + translation;
+        transform.localPosition = originalObject.localPosition * 1/(float)scaleFactor + translation;
         transform.localRotation = originalObject.localRotation;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.localPosition = originalObject.localPosition * scaleFactor + translation;
+        transform.localPosition = originalObject.localPosition * 1/(float)scaleFactor + translation;
         transform.localRotation = originalObject.localRotation;
     }
 

@@ -2600,6 +2600,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "ExperimentControls",
+            "id": "75e8f243-9b8b-46e6-a4dd-96fd880de85f",
+            "actions": [
+                {
+                    "name": "PIDChange",
+                    "type": "Button",
+                    "id": "317a9e94-0081-4c20-972e-cd1bce8f45c1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "HandsVisibility",
+                    "type": "Button",
+                    "id": "8d82ed6a-4cce-49dc-ab41-fcbe5fa70384",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "bbd89e35-e5ae-4b97-b881-d8df40c8586e",
+                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PIDChange",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb91d843-b4a8-4c67-bddf-3dd38872cf2f",
+                    "path": "<OculusTouchController>{LeftHand}/secondaryButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HandsVisibility",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
