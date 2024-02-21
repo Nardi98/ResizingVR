@@ -2622,13 +2622,22 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "NextScene",
+                    "type": "Button",
+                    "id": "ab76c70e-e443-4447-9e53-865c1d8cf975",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "bbd89e35-e5ae-4b97-b881-d8df40c8586e",
-                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
+                    "path": "<Keyboard>/p",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -2639,11 +2648,22 @@
                 {
                     "name": "",
                     "id": "bb91d843-b4a8-4c67-bddf-3dd38872cf2f",
-                    "path": "<OculusTouchController>{LeftHand}/secondaryButton",
+                    "path": "<Keyboard>/h",
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "HandsVisibility",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f658697c-a33d-47ce-8cc7-bd43b87ca271",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NextScene",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -2708,6 +2728,11 @@
                     "isOR": false
                 }
             ]
+        },
+        {
+            "name": "keyboard",
+            "bindingGroup": "keyboard",
+            "devices": []
         }
     ]
 }

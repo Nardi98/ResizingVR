@@ -13,17 +13,57 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "nextScene",
+                    "type": "Button",
+                    "id": "a127f9b6-0653-4111-bb62-04b085991ec5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "hands",
+                    "type": "Button",
+                    "id": "9428e427-ccc5-4a0d-bdef-69733d369d94",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "b1c23769-8584-406d-94b2-49808528a8ea",
-                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "path": "<Keyboard>/i",
                     "interactions": "Press",
                     "processors": "",
-                    "groups": "XR",
+                    "groups": "",
                     "action": "Scale",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c6ed670d-bf88-42b7-bfcf-218da5ff31d7",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "nextScene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d9d2a8d8-4fda-4f01-bb5b-0e5dd3bacd42",
+                    "path": "<Keyboard>/h",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "hands",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
